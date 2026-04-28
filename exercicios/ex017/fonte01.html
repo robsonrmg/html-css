@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: "Work Sans", Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas 
+            cm, mm, in, px, pt, pc
+usar px e em apenas
+            Medidas Relativas
+            em, ex, rem, vw, vh, vmin, vmax, %
+            */
+
+
+            font-size: 1em; 
+            
+            /*lighter,normal,bold,bolder ou 100,200,300,400,500,600,700,800,900 */
+        }
+        h1 { /*
+            nessa ordem é importante, pois o font é uma propriedade de atalho, ou seja, ela engloba as outras propriedades, então a ordem deve ser: font-style, 'font-variant', font-weight, font-size/line-height e font-family, caso contrário, o navegador pode não interpretar corretamente as propriedades, e aplicar apenas a última propriedade definida
+
+            font-family: "Work Sans", sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; no lugar desse posso usar apenas uma linha */
+            font:italic bolder 3em "Work Sans", sans-serif;
+
+        }
+        h2{
+            font: bold 2em "Work Sans", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum saepe accusantium distinctio esse commodi labore nemo nihil, praesentium inventore laudantium vero, ab omnis, repudiandae a veniam sint ea dicta laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus corrupti minima adipisci dignissimos sed nihil cum aspernatur magni? Amet, repellat! Labore aliquid temporibus, deleniti voluptates quidem eaque quos doloremque sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam adipisci saepe distinctio cum error quibusdam porro vero cupiditate asperiores voluptatem, nam, optio eligendi, quae repellendus laborum laudantium eum amet?</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ad aut quod eaque necessitatibus eos consequatur placeat nesciunt corporis dolore ipsum veniam eveniet eligendi, quas molestiae repellat deserunt impedit iure?</p>
+</body>
+</html>
